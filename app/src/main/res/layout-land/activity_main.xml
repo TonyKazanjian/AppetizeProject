@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tonykazanjian.appetizeproject.homescreen.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/imageFrameLayout"
+        android:layout_width="190dp"
+        android:layout_height="170dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp"
+        android:layout_marginBottom="15dp"
+        android:background="@android:color/background_light"
+        android:foreground="?attr/selectableItemBackground"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/dropbox_upload_btn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.233"
+        tools:targetApi="lollipop">
+
+        <TextView
+            android:id="@+id/uploadTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/photo_upload_prompt"
+            android:drawableTop="@drawable/ic_add_a_photo_black_24dp"
+            android:textAlignment="center"
+            tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="8dp"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/dropbox_upload_btn"
+        android:layout_width="306dp"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:background="@drawable/ripple_upload_btn"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/box_upload_btn"
+        app:layout_constraintTop_toBottomOf="@+id/imageFrameLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0.22"
+        tools:targetApi="lollipop">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dropbox"
+            android:layout_marginStart="15dp"
+            android:layout_weight="0.35"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/dropbox_upload"
+            android:layout_weight="2.43"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/box_upload_btn"
+        android:layout_width="306dp"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:background="@drawable/ripple_upload_btn"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginBottom="25dp"
+        android:elevation="2dp"
+        app:layout_constraintTop_toBottomOf="@+id/dropbox_upload_btn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0.076"
+        tools:targetApi="lollipop">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/box"
+            android:layout_marginStart="15dp"
+            android:layout_weight="0.35"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/box_upload"
+            android:layout_weight="2.43"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

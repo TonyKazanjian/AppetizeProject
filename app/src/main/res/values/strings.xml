@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">AppetizeProject</string>
+    <string name="photo_upload_prompt">Click here to select photo to upload.</string>
+    <string name="dropbox_upload">Upload with Dropbox</string>
+    <string name="box_upload">Upload with Box</string>
+    <string name="permission_denial_positive_action">OK</string>
+    <string name="denial_negative_action">Retry</string>
+    <string name="gallery_permissions_denied">You will be unable to upload photos from your gallery</string>
+    <string name="enable_permissions">Go to Settings and enable permissions.</string>
+    <string name="request_progress_message">Uploading your photo…</string>
+    <string name="upload_success">Upload Successful!</string>
+    <string name="upload_success_message">Please check your cloud storage to see your uploaded photo.</string>
+    <string name="upload_fail">Upload Failed</string>
+    <string name="upload_fail_message">Please try again.</string>
+    <string name="missing_photo_toast_message">Please select a photo to upload</string>
+</resources>
